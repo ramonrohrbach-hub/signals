@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#08080b">
+<title>Futures in Progress</title>
+<script>
+  // ↓↓↓ The only line to change: where the QR code on the wall should lead. ↓↓↓
+  const TARGET = "https://mac-mini.tail1234.ts.net/";
+  // ↑↑↑ ------------------------------------------------------------------ ↑↑↑
+  location.replace(TARGET + location.search + location.hash);
+</script>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body { display: grid; place-items: center; background: #08080b; color: #f4f2ee; text-align: center;
+         font: 17px/1.4 -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+         background-image: radial-gradient(60% 40% at 70% 10%, rgba(243,154,69,.35), transparent 70%),
+                           radial-gradient(50% 35% at 30% 60%, rgba(61,134,230,.3), transparent 70%),
+                           radial-gradient(45% 30% at 70% 85%, rgba(138,99,224,.3), transparent 70%); }
+  p { margin: 0 0 14px; opacity: .7; }
+  a { color: #f4f2ee; }
+</style>
+</head>
+<body>
+  <div>
+    <p>Opening Futures in Progress…</p>
+    <a id="go" href="#">Tap here if nothing happens</a>
+  </div>
+  <script>document.getElementById("go").href = TARGET;</script>
+</body>
+</html>
